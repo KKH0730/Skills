@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/folder"
+        android:title="Folder"
+        android:enabled="true"
+        android:icon="@drawable/ic_outline_folder"/>
+
+    <item
+        android:id="@+id/recent"
+        android:title="Recent"
+        android:enabled="true"
+        android:icon="@drawable/ic_outline_recent" />
+
+    <item
+        android:id="@+id/images"
+        android:title="Images"
+        android:enabled="true"
+        android:icon="@drawable/ic_outline_image"/>
+
+    <item
+        android:id="@+id/library"
+        android:title="Library"
+        android:enabled="true"
+        android:icon="@drawable/ic_outline_photo_library"/>
+
+</menu>

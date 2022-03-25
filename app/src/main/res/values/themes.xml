@@ -1,0 +1,96 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Skills" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+<!--        <item name="android:windowContentTransitions">true</item>-->
+<!--        <item name="android:windowAllowEnterTransitionOverlap">false</item>-->
+<!--        <item name="android:windowAllowReturnTransitionOverlap">false</item>-->
+<!--        <item name="android:windowBackground">@color/white</item>-->
+    </style>
+
+    <style name="Theme.Skills_Status_Black" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item> <!--status bar 글자색 false이면 흰색, true이면 검은색-->
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+    <style name="Theme.App.bar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        ...
+        <item name="colorPrimary">#0D5BF4</item>
+        <item name="colorPrimaryVariant">#1E3AF3</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.Shrine.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.App.Subtitle1</item>
+    </style>
+
+    <style name="TextAppearance.Shrine.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/main_font</item>
+        <item name="android:fontFamily">@font/main_font</item>
+    </style>
+
+    <style name="TextAppearance.App.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/main_font</item>
+        <item name="android:fontFamily">@font/main_font</item>
+    </style>
+
+    <style name="MaterialTextStyle" parent="Widget.Design.TextInputLayout">
+        <item name="colorControlNormal">@color/bg_gray</item>
+        <item name="boxStrokeColor">@color/blue</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_custom</item>
+
+        <item name="android:textColorHint">@color/bg_gray</item>
+        <item name="hintTextColor">@color/bg_gray</item>
+
+        <item name="colorControlActivated">@color/main_point_color</item>
+        <item name="android:textColorHighlight">@color/bg_gray</item>
+    </style>
+
+    <style name="Theme.MyApplication.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+    </style>
+    <style name="Theme.MyApplication.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" >
+    </style>
+
+    <style name="ToolbarTitleStyleParent">
+        <item name="android:fontFamily">casual</item>
+        <item name="android:shadowDx">0.5</item>
+        <item name="android:shadowDy">0.5</item>
+        <item name="android:shadowRadius">0.5</item>
+        <item name="android:shadowColor">#ffffff</item>
+    </style>
+
+    <style name="CollapsingTitleStyle" parent="ToolbarTitleStyleParent">
+        <item name="android:textColor">#FF9800</item>
+    </style>
+
+    <style name="ExpandedTitleStyle" parent="ToolbarTitleStyleParent">
+        <item name="android:textColor">#D500F9</item>
+    </style>
+
+
+
+</resources>
