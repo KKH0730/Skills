@@ -17,10 +17,7 @@ import androidx.recyclerview.widget.RecyclerView
 import kr.co.skills.databinding.ActivityMainBinding
 import kr.co.skills.databinding.ItemSkillBinding
 import kr.co.skills.model.Skill
-import kr.co.skills.skill.HeroAnimActivity
-import kr.co.skills.skill.MaterialDesign3Activity
-import kr.co.skills.skill.MaterialDesign2Activity
-import kr.co.skills.skill.PhotoSaveActivity
+import kr.co.skills.skill.*
 
 class MainActivity : AppCompatActivity(), SkillsAdapter.OnSkillItemClickListener {
     private var binding: ActivityMainBinding? = null
@@ -43,6 +40,7 @@ class MainActivity : AppCompatActivity(), SkillsAdapter.OnSkillItemClickListener
         skillArray.add(Skill(skillName = "Material Design3", orderNumber = 2, isHeroAnim = false))
         skillArray.add(Skill(skillName = "갤러리 사진 저장", orderNumber = 3, isHeroAnim = false))
         skillArray.add(Skill(skillName = "Hero Animation", orderNumber = 4, isHeroAnim = true))
+        skillArray.add(Skill(skillName = "Layout Animation", orderNumber = 5, isHeroAnim = false))
         skillAdapter.submitList(skillArray.toList())
     }
 
@@ -54,6 +52,7 @@ class MainActivity : AppCompatActivity(), SkillsAdapter.OnSkillItemClickListener
             2 -> intent = Intent(applicationContext, MaterialDesign3Activity::class.java)
             3 -> intent = Intent(applicationContext, PhotoSaveActivity::class.java)
             4 -> intent = Intent(applicationContext, HeroAnimActivity::class.java)
+            5 -> intent = Intent(applicationContext, LayoutAnimActivity::class.java)
         }
         if (item.orderNumber != 4) {
             startActivity(intent)

@@ -26,7 +26,7 @@
                 app:contentScrim="@color/blue"
                 app:scrimAnimationDuration="200"
                 app:collapsedTitleTextColor="@color/yellow"
-                app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
                 app:collapsedTitleTextAppearance="@style/CollapsingTitleStyle"
                 app:expandedTitleTextAppearance="@style/ExpandedTitleStyle">
 
